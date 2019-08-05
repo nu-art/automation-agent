@@ -20,7 +20,7 @@
   -->
 
 <resources>
-	<string name="app_name">Template Project</string>
-	<string name="app_full_name">Template Project</string>
-	<string name="CyborgAutomation">CyborgAutomation</string>
+    <string name="app_name">Template Project</string>
+    <string name="app_full_name">Template Project</string>
+    <string name="CyborgAutomation">CyborgAutomation</string>
 </resources>

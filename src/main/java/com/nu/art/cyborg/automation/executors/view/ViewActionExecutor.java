@@ -20,24 +20,22 @@
 
 package com.nu.art.cyborg.automation.executors.view;
 
-
 import com.nu.art.automation.models.view.ViewAction;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
-
 
 public abstract class ViewActionExecutor<Action extends ViewAction>
 	extends AutomationStepExecutor<Action> {
 
 	protected final void requestFocus()
-			throws CyborgAutomationException {
-//		final View webView = solo.getView(step.getViewConstantName());
-//		waitForMainThreadAction(new Runnable() {
-//
-//			@Override
-//			public void run() {
-//				webView.requestFocus();
-//			}
-//		});
+		throws CyborgAutomationException {
+		//		final View webView = solo.getView(step.getViewConstantName());
+		//		waitForMainThreadAction(new Runnable() {
+		//
+		//			@Override
+		//			public void run() {
+		//				webView.requestFocus();
+		//			}
+		//		});
 	}
 }

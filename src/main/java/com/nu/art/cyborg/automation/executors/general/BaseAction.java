@@ -30,5 +30,5 @@ public abstract class BaseAction
 	}
 
 	protected abstract void executeStep()
-			throws Exception;
+		throws Exception;
 }

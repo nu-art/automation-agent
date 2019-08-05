@@ -22,27 +22,25 @@ package com.nu.art.cyborg.automation.executors.device;
 import com.nu.art.automation.models.device.Action_PressHardButton;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 
-
 public final class Executor_PressHardButton
 	extends AutomationStepExecutor<Action_PressHardButton> {
 
 	@Override
 	protected void execute() {
-//		HardButton button = step.getButton();
-//
-//		logInfo("Pressing on hard button: "+ button);
-//		switch (button) {
-//			case Back :
-//				solo.goBack();
-//				break;
-//			case Home :
-//				solo.clickOnActionBarHomeButton();
-//				break;
-//			case Menu :
-//				break;
-//			case Search :
-//				break;
-//		}
+		//		HardButton button = step.getButton();
+		//
+		//		logInfo("Pressing on hard button: "+ button);
+		//		switch (button) {
+		//			case Back :
+		//				solo.goBack();
+		//				break;
+		//			case Home :
+		//				solo.clickOnActionBarHomeButton();
+		//				break;
+		//			case Menu :
+		//				break;
+		//			case Search :
+		//				break;
+		//		}
 	}
-
 }

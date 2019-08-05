@@ -19,34 +19,32 @@
  */
 package com.nu.art.cyborg.automation.executors.view;
 
-
 import com.nu.art.automation.models.view.Action_SelectTextInEditText;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
-
 
 public final class Executor_SelectTextInEditText
 	extends AutomationStepExecutor<Action_SelectTextInEditText> {
 
 	@Override
 	protected void execute()
-			throws CyborgAutomationException {
-//		logInfo("Select text " + step.getFrom() + "->" + step.getTo() + " in view with id: " + step.getViewConstantName());
-//		final EditText editText = (EditText) solo.getView(step.getViewConstantName());
-//		waitForMainThreadAction(new Runnable() {
-//
-//			@Override
-//			public void run() {
-//				int from = step.getFrom();
-//				int to = step.getTo();
-//				if (to < 0) {
-//					editText.selectAll();
-//					return;
-//				}
-//				if (from < 0)
-//					from = 0;
-//				editText.setSelection(from, to);
-//			}
-//		});
+		throws CyborgAutomationException {
+		//		logInfo("Select text " + step.getFrom() + "->" + step.getTo() + " in view with id: " + step.getViewConstantName());
+		//		final EditText editText = (EditText) solo.getView(step.getViewConstantName());
+		//		waitForMainThreadAction(new Runnable() {
+		//
+		//			@Override
+		//			public void run() {
+		//				int from = step.getFrom();
+		//				int to = step.getTo();
+		//				if (to < 0) {
+		//					editText.selectAll();
+		//					return;
+		//				}
+		//				if (from < 0)
+		//					from = 0;
+		//				editText.setSelection(from, to);
+		//			}
+		//		});
 	}
 }

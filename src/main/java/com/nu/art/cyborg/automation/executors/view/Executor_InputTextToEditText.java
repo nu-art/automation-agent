@@ -19,19 +19,16 @@
  */
 package com.nu.art.cyborg.automation.executors.view;
 
-
 import com.nu.art.automation.models.view.Action_InputTextToEditText;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
-
 
 public final class Executor_InputTextToEditText
 	extends AutomationStepExecutor<Action_InputTextToEditText> {
 
 	@Override
 	protected void execute() {
-//		logInfo("Insert text '" + step.getText() + "' to view with id: " + step.getViewConstantName());
-//		EditText editText = (EditText) solo.getView(step.getViewConstantName());
-//		solo.typeText(editText, step.getText());
+		//		logInfo("Insert text '" + step.getText() + "' to view with id: " + step.getViewConstantName());
+		//		EditText editText = (EditText) solo.getView(step.getViewConstantName());
+		//		solo.typeText(editText, step.getText());
 	}
-
 }

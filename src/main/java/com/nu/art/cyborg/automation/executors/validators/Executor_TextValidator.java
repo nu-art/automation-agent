@@ -25,73 +25,71 @@ import com.nu.art.automation.models.validators.Action_TextValidator;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
 import com.nu.art.cyborg.automation.executors.view.ViewActionExecutor;
 
-
 public class Executor_TextValidator
 	extends ViewActionExecutor<Action_TextValidator> {
 
 	@Override
 	protected void execute()
-			throws CyborgAutomationException {
-//		View view = solo.getView(step.getViewConstantName());
-//		String extractedText;
-//		if (view instanceof TextView) {
-//			extractedText = (String) ((TextView) view).getText();
-//		} else if (view instanceof EditText) {
-//			extractedText = ((EditText) view).getText().toString();
-//		} else
-//			throw new CyborgAutomationException("Cannot extract text out of a " + view.getClass().getSimpleName());
-//
-//		boolean valid = false;
-//		switch (step.getComparator()) {
-//			case Equals :
-//			case EqualsOrGreaterThan :
-//			case GreaterThan :
-//			case LesserThan :
-//			case EqualsOrLesserThan :
-//				double extractedValue;
-//				try {
-//					extractedValue = Double.parseDouble(extractedText);
-//				} catch (NumberFormatException e) {
-//					throw new CyborgAutomationException("Error parsing extracted value", e);
-//				}
-//				double expectedValue;
-//				try {
-//					expectedValue = Double.parseDouble(step.getExpectedValue());
-//				} catch (NumberFormatException e) {
-//					throw new CyborgAutomationException("Error parsing expected value", e);
-//				}
-//				valid = compareValue(step.getComparator(), extractedValue, expectedValue);
-//				break;
-//
-//			case Contains :
-//				valid = extractedText.contains(extractedText);
-//				break;
-//
-//			case Matches :
-//				valid = extractedText.equals(extractedText);
-//				break;
-//		}
-//
-//		if (!valid)
-//			throw new CyborgAutomationException("Unable to validate: " + extractedText + " !" + step.getComparator() + " "
-//					+ step.getExpectedValue());
+		throws CyborgAutomationException {
+		//		View view = solo.getView(step.getViewConstantName());
+		//		String extractedText;
+		//		if (view instanceof TextView) {
+		//			extractedText = (String) ((TextView) view).getText();
+		//		} else if (view instanceof EditText) {
+		//			extractedText = ((EditText) view).getText().toString();
+		//		} else
+		//			throw new CyborgAutomationException("Cannot extract text out of a " + view.getClass().getSimpleName());
+		//
+		//		boolean valid = false;
+		//		switch (step.getComparator()) {
+		//			case Equals :
+		//			case EqualsOrGreaterThan :
+		//			case GreaterThan :
+		//			case LesserThan :
+		//			case EqualsOrLesserThan :
+		//				double extractedValue;
+		//				try {
+		//					extractedValue = Double.parseDouble(extractedText);
+		//				} catch (NumberFormatException e) {
+		//					throw new CyborgAutomationException("Error parsing extracted value", e);
+		//				}
+		//				double expectedValue;
+		//				try {
+		//					expectedValue = Double.parseDouble(step.getExpectedValue());
+		//				} catch (NumberFormatException e) {
+		//					throw new CyborgAutomationException("Error parsing expected value", e);
+		//				}
+		//				valid = compareValue(step.getComparator(), extractedValue, expectedValue);
+		//				break;
+		//
+		//			case Contains :
+		//				valid = extractedText.contains(extractedText);
+		//				break;
+		//
+		//			case Matches :
+		//				valid = extractedText.equals(extractedText);
+		//				break;
+		//		}
+		//
+		//		if (!valid)
+		//			throw new CyborgAutomationException("Unable to validate: " + extractedText + " !" + step.getComparator() + " "
+		//					+ step.getExpectedValue());
 	}
 
 	private boolean compareValue(Comparator comparator, double extractedValue, double expectedValue) {
 		switch (comparator) {
-			case Equals :
+			case Equals:
 				return extractedValue == expectedValue;
-			case EqualsOrGreaterThan :
+			case EqualsOrGreaterThan:
 				return extractedValue >= expectedValue;
-			case GreaterThan :
+			case GreaterThan:
 				return extractedValue > expectedValue;
-			case LesserThan :
+			case LesserThan:
 				return extractedValue < expectedValue;
-			case EqualsOrLesserThan :
+			case EqualsOrLesserThan:
 				return extractedValue <= expectedValue;
-			default :
+			default:
 				return false;
 		}
 	}
-
 }

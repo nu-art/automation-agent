@@ -19,26 +19,24 @@
  */
 package com.nu.art.cyborg.automation.executors.view;
 
-
 import com.nu.art.automation.models.view.Action_ClearTextInEditText;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
-
 
 public final class Executor_ClearTextInEditText
 	extends AutomationStepExecutor<Action_ClearTextInEditText> {
 
 	@Override
 	protected void execute()
-			throws CyborgAutomationException {
-//		final EditText editText = (EditText) solo.getView(step.getViewConstantName());
-//		waitForMainThreadAction(new Runnable() {
-//
-//			@Override
-//			public void run() {
-//				logInfo("Clear text in view with id: " + step.getViewConstantName());
-//				editText.setText("");
-//			}
-//		});
+		throws CyborgAutomationException {
+		//		final EditText editText = (EditText) solo.getView(step.getViewConstantName());
+		//		waitForMainThreadAction(new Runnable() {
+		//
+		//			@Override
+		//			public void run() {
+		//				logInfo("Clear text in view with id: " + step.getViewConstantName());
+		//				editText.setText("");
+		//			}
+		//		});
 	}
 }

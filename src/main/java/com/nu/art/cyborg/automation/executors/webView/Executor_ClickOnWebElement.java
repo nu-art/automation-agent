@@ -19,17 +19,15 @@
  */
 package com.nu.art.cyborg.automation.executors.webView;
 
-
 import com.nu.art.automation.models.webView.Action_ClickOnWebElement;
-
 
 public final class Executor_ClickOnWebElement
 	extends WebElementStepExecutor<Action_ClickOnWebElement> {
 
 	@Override
 	protected void execute() {
-//		WebElement element = getWebElement();
-//		logInfo("Clicking on WebElement");
-//		solo.clickOnWebElement(element);
+		//		WebElement element = getWebElement();
+		//		logInfo("Clicking on WebElement");
+		//		solo.clickOnWebElement(element);
 	}
 }

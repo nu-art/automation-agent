@@ -29,5 +29,4 @@ public final class Executor_OnCrashHere
 	protected void execute() {
 		manager.toastOnApplication("Crashed Here");
 	}
-
 }

@@ -19,10 +19,8 @@
  */
 package com.nu.art.cyborg.automation.executors.waiters;
 
-
 import com.nu.art.automation.models.waiter.Action_WaitForWebElement;
 import com.robotium.solo.By;
-
 
 public final class Executor_WaitForWebElement
 	extends WaitForConditionExecutor<Action_WaitForWebElement> {
@@ -33,8 +31,8 @@ public final class Executor_WaitForWebElement
 
 	@Override
 	protected boolean checkCondition() {
-//		logInfo("Waiting for WebElement with " + step.getElementBy() + ": " + step.getCriteria());
-//		return solo.waitForWebElement(getBy(), 2000, true);
+		//		logInfo("Waiting for WebElement with " + step.getElementBy() + ": " + step.getCriteria());
+		//		return solo.waitForWebElement(getBy(), 2000, true);
 		return false;
 	}
 }

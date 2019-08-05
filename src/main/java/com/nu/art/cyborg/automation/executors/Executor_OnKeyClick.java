@@ -27,6 +27,6 @@ public final class Executor_OnKeyClick
 
 	@Override
 	protected void execute() {
-//		solo.sendKey(step.getInterval());
+		//		solo.sendKey(step.getInterval());
 	}
 }

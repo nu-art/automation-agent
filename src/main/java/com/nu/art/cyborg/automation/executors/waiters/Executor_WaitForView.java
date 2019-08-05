@@ -19,17 +19,15 @@
  */
 package com.nu.art.cyborg.automation.executors.waiters;
 
-
 import com.nu.art.automation.models.waiter.Action_WaitForView;
-
 
 public final class Executor_WaitForView
 	extends WaitForConditionExecutor<Action_WaitForView> {
 
 	@Override
 	protected boolean checkCondition() {
-//		logInfo("Waiting for view with ID: " + step.getViewConstantName());
-//		return solo.waitForView(manager.getId(ResourceType.Id, step.getViewConstantName()));
+		//		logInfo("Waiting for view with ID: " + step.getViewConstantName());
+		//		return solo.waitForView(manager.getId(ResourceType.Id, step.getViewConstantName()));
 		return false;
 	}
 }

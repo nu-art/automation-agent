@@ -20,11 +20,9 @@
 
 package com.nu.art.cyborg.automation.executors.webView;
 
-
 import com.nu.art.automation.models.webView.WebElementAction;
 import com.nu.art.cyborg.automation.executors.view.ViewActionExecutor;
 import com.robotium.solo.By;
-
 
 public abstract class WebElementStepExecutor<Action extends WebElementAction>
 	extends ViewActionExecutor<Action> {
@@ -33,19 +31,18 @@ public abstract class WebElementStepExecutor<Action extends WebElementAction>
 		return super.getBy(step.getElementBy(), step.getCriteria());
 	}
 
-//	protected final ArrayList<WebElement> getCurrentWebElements() {
-//		By by = getBy();
-//		logInfo("Fetching a WebElements List by " + step.getElementBy() + ": " + step.getCriteria());
-//		if (by == null)
-//			return solo.getCurrentWebElements();
-//		return solo.getCurrentWebElements(by);
-//	}
-//
-//	protected final WebElement getWebElement() {
-//		logInfo("Fetching a WebElement by " + step.getElementBy() + ": " + step.getCriteria() + ", index="
-//				+ step.getIndex());
-//
-//		return solo.getWebElement(getBy(), step.getIndex());
-//	}
-
+	//	protected final ArrayList<WebElement> getCurrentWebElements() {
+	//		By by = getBy();
+	//		logInfo("Fetching a WebElements List by " + step.getElementBy() + ": " + step.getCriteria());
+	//		if (by == null)
+	//			return solo.getCurrentWebElements();
+	//		return solo.getCurrentWebElements(by);
+	//	}
+	//
+	//	protected final WebElement getWebElement() {
+	//		logInfo("Fetching a WebElement by " + step.getElementBy() + ": " + step.getCriteria() + ", index="
+	//				+ step.getIndex());
+	//
+	//		return solo.getWebElement(getBy(), step.getIndex());
+	//	}
 }

@@ -19,17 +19,15 @@
  */
 package com.nu.art.cyborg.automation.executors.webView;
 
-
 import com.nu.art.automation.models.webView.Action_InputTextToWebElement;
-
 
 public final class Executor_InputTextToWebElement
 	extends WebElementStepExecutor<Action_InputTextToWebElement> {
 
 	@Override
 	protected void execute() {
-//		WebElement element = getWebElement();
-//		logInfo("Inserting text '" + step.getText() + "' to WebElement");
-//		solo.typeTextInWebElement(element, step.getText());
+		//		WebElement element = getWebElement();
+		//		logInfo("Inserting text '" + step.getText() + "' to WebElement");
+		//		solo.typeTextInWebElement(element, step.getText());
 	}
 }

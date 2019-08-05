@@ -19,24 +19,21 @@
  */
 package com.nu.art.cyborg.automation.executors.general;
 
-
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
-
 
 public final class Executor_AbstractStep
 	extends AutomationStepExecutor<BaseAction> {
 
 	@Override
 	protected void execute()
-			throws CyborgAutomationException {
+		throws CyborgAutomationException {
 		try {
 			step.executeStep();
 		} catch (Exception e) {
 			throw new CyborgAutomationException("Error executing abstract step: " + step, e);
 		}
 	}
-
 }
 
 

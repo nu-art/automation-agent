@@ -19,29 +19,33 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-			  android:layout_width="fill_parent"
-			  android:layout_height="fill_parent"
-			  android:orientation="vertical"
-			  android:weightSum="1">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
 
-	<TextView
-			android:id="@+id/textView1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal"
-			android:layout_marginBottom="15dp"
-			android:layout_marginTop="10dp"
-			android:cursorVisible="true"
-			android:text="@string/app_full_name"
-			android:textAppearance="?android:attr/textAppearanceLarge">
-	</TextView>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="true"
+        android:text="@string/app_full_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        >
+    </TextView>
 
-	<Button
-			android:id="@+id/TemplateButton"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal"
-			android:text="Toast"/>
+    <Button
+        android:id="@+id/TemplateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Toast"
+        />
 
 </LinearLayout>

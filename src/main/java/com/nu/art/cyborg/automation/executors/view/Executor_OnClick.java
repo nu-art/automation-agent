@@ -22,26 +22,25 @@ package com.nu.art.cyborg.automation.executors.view;
 import com.nu.art.automation.models.view.Action_ClickOnView;
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 
-
 public final class Executor_OnClick
 	extends AutomationStepExecutor<Action_ClickOnView> {
 
 	@Override
 	protected void execute() {
-//		View view = solo.getView(manager.getId(ResourceType.Id, step.getViewConstantName()));
-//		ClickType clickType = step.getClickType();
-//		switch (clickType) {
-//			case Click :
-//				logInfo("Clicking on view with ID: " + step.getViewConstantName());
-//				solo.clickOnView(view);
-//				break;
-//			case LongClick :
-//				logInfo("Long Clicking on view with ID: " + step.getViewConstantName());
-//				solo.clickLongOnView(view);
-//				break;
-//
-//			default :
-//				break;
-//		}
+		//		View view = solo.getView(manager.getId(ResourceType.Id, step.getViewConstantName()));
+		//		ClickType clickType = step.getClickType();
+		//		switch (clickType) {
+		//			case Click :
+		//				logInfo("Clicking on view with ID: " + step.getViewConstantName());
+		//				solo.clickOnView(view);
+		//				break;
+		//			case LongClick :
+		//				logInfo("Long Clicking on view with ID: " + step.getViewConstantName());
+		//				solo.clickLongOnView(view);
+		//				break;
+		//
+		//			default :
+		//				break;
+		//		}
 	}
 }

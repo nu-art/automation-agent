@@ -19,18 +19,16 @@
  */
 package com.nu.art.cyborg.automation.executors.waiters;
 
-
 import com.nu.art.cyborg.automation.core.AutomationStepExecutor;
 import com.nu.art.cyborg.automation.exceptions.CyborgAutomationException;
 import com.nu.art.automation.models.waiter.WaitForConditionAction;
-
 
 public abstract class WaitForConditionExecutor<ConditionAction extends WaitForConditionAction>
 	extends AutomationStepExecutor<ConditionAction> {
 
 	@Override
 	protected final void execute()
-			throws CyborgAutomationException {
+		throws CyborgAutomationException {
 		long duration = System.currentTimeMillis();
 		boolean conditionMeet = false;
 		while (System.currentTimeMillis() - duration < step.getTimeout()) {
